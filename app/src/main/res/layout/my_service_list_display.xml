@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/service_name"
+        android:layout_marginLeft="80dp"
+        android:textAlignment="textStart"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="80dp"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/service_name"
+        android:textSize="10dp"
+        android:id="@+id/service_description"
+        android:text=""
+        android:gravity="top" />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:id="@+id/price_value"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        style="@style/MyTextViewStyle"/>
+
+    <ImageView
+        android:id="@+id/service_image"
+        android:layout_width="80dp"
+        android:layout_height="75dp"/>
+
+</RelativeLayout>

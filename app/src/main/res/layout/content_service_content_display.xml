@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/service_page_name"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/service_page_name"
+        android:id="@+id/service_page_price"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/service_page_description"
+        android:layout_below="@+id/service_page_price"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:text=""
+        android:textAlignment="textStart"/>
+
+
+
+</RelativeLayout>

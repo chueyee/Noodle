@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chueyee.noodle.CreateService"
+    tools:showIn="@layout/activity_create_service">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create a Service"
+        android:id="@+id/pagename"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Name of Service"
+        android:id="@+id/nameET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/priceET"
+        android:hint="Price"
+        android:text="$"
+        android:layout_below="@+id/nameET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/descriptionET"
+        android:hint="Brief Description (Hours, etc)"
+        android:layout_below="@+id/priceET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add photos"
+        android:id="@+id/photoBtn"
+        android:layout_below="@+id/salesBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="CREATE"
+        android:id="@+id/createBtn"
+        android:layout_below="@+id/photoBtn"
+        android:layout_alignLeft="@+id/photoBtn"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancelBtn"
+        android:layout_below="@+id/photoBtn"
+        android:layout_alignRight="@+id/photoBtn"
+        android:layout_marginRight="-40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Time Sale"
+        android:id="@+id/salesBox"
+        android:layout_below="@+id/descriptionET"
+        android:layout_alignLeft="@+id/descriptionET"
+        android:layout_alignStart="@+id/descriptionET"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="83dp"/>
+
+</RelativeLayout>
